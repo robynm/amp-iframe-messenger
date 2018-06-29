@@ -1,0 +1,20 @@
+{
+  "name": "AMP iframe messenger",
+  "version": "1.0",
+  "description": "View message payloads sent by amp-iframes",
+  "permissions": ["activeTab", "declarativeContent"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "page_action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+   {
+     "matches": ["https://*.seattletimes.com/*"],
+     "js": ["amp-iframe-messenger.js"]
+   }
+ ],
+  "manifest_version": 2
+}

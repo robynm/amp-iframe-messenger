@@ -1,2 +1,2 @@
 # amp-iframe-messenger
-View message payloads sent by Google AMP iframes
+A Chrome extension for viewing message payloads sent by Google AMP iframes
